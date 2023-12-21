@@ -1,4 +1,4 @@
-import { TypographyH2 } from '@/components/ui/typography'
+import { TypographyH2, TypographyH3 } from '@/components/ui/typography'
 import { getAuthSession } from '@/lib/auth-options';
 import { redirect } from 'next/navigation';
 import React from 'react'
@@ -11,7 +11,7 @@ const CartPage = async(props: Props) => {
     return redirect('/auth/login?callbackUrl=/user/cart')
   }
   return (
-    <TypographyH2>CartPage</TypographyH2>
+    <TypographyH3>CartPage</TypographyH3>
   )
 }
 

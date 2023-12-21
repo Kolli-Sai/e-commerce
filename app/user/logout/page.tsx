@@ -13,9 +13,9 @@ const LogoutPage = async(props: Props) => {
   }
   return (
     <div className='  h-full flex flex-col justify-center  gap-6'>
-      <TypographyH2 className='text-center'>
+      <TypographyH3 className='text-center'>
         Are you sure you want to logout?
-      </TypographyH2>
+      </TypographyH3>
       <div className=' flex justify-center'>
 
       <SignoutButton />
