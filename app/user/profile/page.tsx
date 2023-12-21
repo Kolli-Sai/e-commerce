@@ -1,3 +1,4 @@
+import { TypographyH3 } from "@/components/ui/typography";
 import { getAuthSession } from "@/lib/auth-options";
 import { redirect } from "next/navigation";
 import React from "react";
@@ -9,7 +10,7 @@ const ProfilePage = async (props: Props) => {
   if (!session) {
     return redirect("/auth/login?callbackUrl=/user/profile");
   }
-  return <div>ProfilePage</div>;
+  return <TypographyH3>ProfilePage</TypographyH3>;
 };
 
 export default ProfilePage;

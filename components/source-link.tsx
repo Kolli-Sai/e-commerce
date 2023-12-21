@@ -7,7 +7,7 @@ type Props = {}
 
 const SourceLink = (props: Props) => {
   return (
-    <Button asChild size={'icon'} variant={'ghost'}>
+    <Button asChild size={'icon'} variant={'outline'}>
         <Link href={'https://github.com/Kolli-Sai'} target='_blank'>
             <Github  />
         </Link>

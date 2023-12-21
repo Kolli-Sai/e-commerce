@@ -1,4 +1,4 @@
-import { TypographyH2 } from "@/components/ui/typography";
+import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
 import { getAuthSession } from "@/lib/auth-options";
 import { redirect } from "next/navigation";
 import React from "react";
@@ -10,7 +10,7 @@ const FavotitesPage = async(props: Props) => {
   if(!session){
     return redirect('/auth/login?callbackUrl=/user/favorites')
   }
-  return <TypographyH2>FavotitesPage</TypographyH2>;
+  return <TypographyH3>FavotitesPage</TypographyH3>;
 };
 
 export default FavotitesPage;

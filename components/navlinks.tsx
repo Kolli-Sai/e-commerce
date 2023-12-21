@@ -6,6 +6,7 @@ import {
   LockKeyhole,
   LogOut,
   ShoppingCart,
+  User,
 } from "lucide-react";
 import React from "react";
 import Link from "next/link";
@@ -25,6 +26,13 @@ const NavLinks = (props: Props) => {
       name: "Home",
       href: "/user/products",
       icon: Home,
+    },
+    {
+      id: 5,
+      name: "My Profile",
+
+      href: "/user/profile",
+      icon: User,
     },
     {
       id: 2,
@@ -52,7 +60,7 @@ const NavLinks = (props: Props) => {
   return (
     <div className=" flex flex-col justify-between  px-3 h-full ">
       <div className=" h-full w-full py-6">
-        <Link href={'/user/profile'} className={cn(
+        {/* <Link href={'/user/profile'} className={cn(
                   " flex justify-between items-center gap-2 py-3 px-6 w-full hover:bg-secondary hover:text-secondary-foreground my-2 rounded-lg ",
                   {
                     "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground":
@@ -64,7 +72,7 @@ const NavLinks = (props: Props) => {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <ChevronRight />
-        </Link>
+        </Link> */}
         {links.map((link) => {
           let Icon = link.icon;
           return (

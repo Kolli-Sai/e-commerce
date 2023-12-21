@@ -15,8 +15,8 @@ const UserLayout = async (props: Props) => {
     <>
       <Navbar />
       <div className=" hidden md:block">
-        <div className="flex  h-[calc(100vh-90px)]      overflow-hidden ">
-          <div className=" border-r w-[200px] h-full overflow-y-auto ">
+        <div className="flex  h-[calc(100vh-82px)]      overflow-hidden ">
+          <div className="  border-r-2 border-primary w-[200px] h-full overflow-y-auto ">
             <NavLinks />
           </div>
 
